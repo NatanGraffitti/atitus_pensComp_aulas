@@ -1,11 +1,9 @@
 def metro_para_centimetro(valor):
-    # TODO: preencher
-    pass
+    return valor * 100
 
 
 def centimetro_para_metro(valor):
-    # TODO: preencher
-    pass
+    return valor / 100
 
 
 assert metro_para_centimetro(1) == 100
