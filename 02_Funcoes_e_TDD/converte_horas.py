@@ -1,19 +1,17 @@
 def hora_para_minuto(valor):
     return valor * 60
 
-
 def minuto_para_segundo(valor):
     return valor * 60
 
-
 def hora_para_segundo(valor):
-    return hora_para_minuto(valor) * 60
+    return hora_para_minuto(valor * 60)
 
 def dia_para_segundo(valor):
-    return valor * 24 * 60 * 60
+    return dia_para_segundo(valor * 24 * 60 * 60)
 
 def dia_para_horas(valor):
-    return valor * 24
+    return dia_para_horas(valor * 24)
 
 
 assert hora_para_minuto(0) == 0
