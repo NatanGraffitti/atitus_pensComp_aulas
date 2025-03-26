@@ -1,8 +1,8 @@
 def eh_bissexto(ano): #função que se o ano for divisível por 4 retorna que o ano é bissexto
     if ano % 4 == 0:
-        return True and print ("Bissexto") #não precisa do return false pois o boolean ja vai retornar false
+        return ("Bissexto") #não precisa do return false pois o boolean ja vai retornar false
     else:
-        return False and print ("Não bissexto")
+        return ("Não bissexto")
         
 def proximo_bissexto(ano): #return (ano + 3) // 4 * 4 -> solução em uma linha da correção em aula
     if ano % 4 == 0:
