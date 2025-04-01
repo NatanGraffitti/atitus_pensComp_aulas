@@ -1,11 +1,13 @@
-ANO_ATUAL = 2024
-
-
 def saudacao(nome, sobrenome, ano_nascimento):
-    # Preencher
-    pass
+    ANO_ATUAL = 2025
+    nome = input('Qual o seu nome?')
+    sobrenome = input('Qual o seu sobrenome?')
+    data_de_nascimento = int(input('Qual o seu ano de nascimento?'))
+    idade = ANO_ATUAL - data_de_nascimento 
 
+print('Olá,', '" nome, sobrenome "', 'você tem: ', idade, 'anos')
 
+def test():
 assert (
     saudacao("Matheus", "Jardim", 1991)
     == "Olá, Matheus Jardim. Bom dia! Você possui 33 anos!"
