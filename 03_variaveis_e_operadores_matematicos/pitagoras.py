@@ -23,6 +23,6 @@ def test():
     assert hipotenusa(6, 8) == 10
     assert hipotenusa(5, 12) == 13
 
-print (area(10, 5))
+print (area(5, 5))
 print (perimetro(10, 5))
 print (hipotenusa(6, 8))
