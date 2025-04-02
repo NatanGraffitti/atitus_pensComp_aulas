@@ -28,4 +28,4 @@ def test():
     assert horoscopo(13) is None
     
     
-print (horoscopo(7))
+print (horoscopo(1))
