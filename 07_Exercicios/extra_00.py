@@ -1,11 +1,11 @@
-def saudacao(nome, sobrenome, ano_nascimento):
+def saudacao():
     ANO_ATUAL = 2025
     nome = input('Qual o seu nome?')
     sobrenome = input('Qual o seu sobrenome?')
     data_de_nascimento = int(input('Qual o seu ano de nascimento?'))
     idade = ANO_ATUAL - data_de_nascimento 
 
-print('Olá,', '" nome, sobrenome "', 'você tem: ', idade, 'anos')
+print(f'Olá,', '" nome, sobrenome "', 'você tem: ', idade, 'anos')
 
 def test():
 assert (
