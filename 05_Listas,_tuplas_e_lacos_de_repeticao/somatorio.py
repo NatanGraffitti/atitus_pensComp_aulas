@@ -4,11 +4,10 @@ def somatorio(numero):
 
     resultado = 0
     
-    while resultado in range(10):
-        print (total, resultado)
+    for i in range(numero + 1):
+        resultado += 1
     return resultado
-    
-    
+        
    
 def test():    
     assert somatorio(-1) is None
