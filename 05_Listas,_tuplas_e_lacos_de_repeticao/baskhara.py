@@ -1,3 +1,6 @@
+def raiz_quadrada(numero):
+  return numero ** 0.5
+
 def baskhara(a, b, c):
     delta = b**2 - 4 * a * c  # Calcula o delta
 
