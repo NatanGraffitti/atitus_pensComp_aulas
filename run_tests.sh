@@ -13,8 +13,8 @@ run_tests() {
   run_tests 03_variaveis_e_operadores_matematicos/*.py
   run_tests 04_operadores_logicos_e_condicoes/*.py
   run_tests 05_Listas,_tuplas_e_lacos_de_repeticao/*.py
- run_tests 06_Listas_continuacao/*.py
- run_tests 07_Exercicios/*.py
+  run_tests 06_Listas_continuacao/*.py
+  run_tests 07_Exercicios/*.py
 # run_tests 08_Strings_random/*.py
 # run_tests 09_Dicionários/*.py
 # run_tests 10_Introducao_a_funcoes/*.py
