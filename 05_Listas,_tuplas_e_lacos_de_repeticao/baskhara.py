@@ -2,18 +2,18 @@ def raiz_quadrada(numero):
   return numero ** 0.5
 
 def baskhara(a, b, c):
-    delta = b**2 - 4 * a * c  # Calcula o delta
+    delta = b**2 - 4 * a * c  
 
     if delta < 0:
         return "Sem raízes reais"
     elif delta == 0:
         x = -b / (2 * a)
-        return (x, x)
+        return [x, x]
     else:
         raiz_delta = raiz_quadrada(delta)  
-        x1 = (-b + raiz_delta) / (2 * a)  # Calcula a primeira raiz
-        x2 = (-b - raiz_delta) / (2 * a)  # Calcula a segunda raiz
-        return (x1, x2)  # Retorna as duas raízes
+        x1 = (-b + raiz_delta) / (2 * a)  
+        x2 = (-b - raiz_delta) / (2 * a)  
+        return [x1, x2]  
 
 
 def test():
