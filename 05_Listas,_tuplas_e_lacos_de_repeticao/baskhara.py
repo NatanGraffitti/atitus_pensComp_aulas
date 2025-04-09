@@ -1,4 +1,4 @@
-def bhaskara(a, b, c):
+def baskhara(a, b, c):
     delta = b**2 - 4 * a * c  # Calcula o delta
 
     if delta < 0:
