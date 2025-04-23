@@ -3,13 +3,13 @@ def somatorio(numero):
         return None
 
     resultado = 0
-    
+
     for i in range(numero + 1):
-        resultado += 1
+        resultado += i
     return resultado
-        
-   
-def test():    
+
+
+def test():
     assert somatorio(-1) is None
     assert somatorio(0) == 0
     assert somatorio(1) == 1
@@ -21,3 +21,5 @@ def test():
     assert somatorio(7) == 28
     assert somatorio(8) == 36
     assert somatorio(9) == 45
+
+print(somatorio(5))
