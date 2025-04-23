@@ -1,31 +1,32 @@
-def horoscopo(mes):  #função (def) com assinatura do método (horoscopo) e parâmetro (mes)
+def horoscopo(mes):  # função (def) com assinatura do método (horoscopo) e parâmetro (mes)
     if mes <= 0 or mes > 12:
         return ("Valor inválido")
-    if mes > 0 and mes <= 3:
-        return ("Você é do signo de Python")        
-    if mes > 4 and mes <= 6:
+    if 1 <= mes <= 3:
+        return ("Você é do signo de Python")
+    if 4 <= mes <= 6:
         return ("Você é do signo de Java")
-    if mes > 7 and mes <= 9:
+    if 7 <= mes <= 9:
         return ("Você é do signo de PHP")
-    if mes > 10 and mes <= 12:
-        return ("Você é do signo de TypeScript")   
+    if 10 <= mes <= 12:
+        return ("Você é do signo de TypeScript")
+
 
 def test():
-    assert horoscopo(1) == "Python"
-    assert horoscopo(3) == "Python"
+    assert horoscopo(1) == "Você é do signo de Python"
+    assert horoscopo(3) == "Você é do signo de Python"
 
-    assert horoscopo(4) == "Java"
-    assert horoscopo(6) == "Java"
+    assert horoscopo(4) == "Você é do signo de Java"
+    assert horoscopo(6) == "Você é do signo de Java"
 
-    assert horoscopo(7) == "PHP"
-    assert horoscopo(9) == "PHP"
+    assert horoscopo(7) == "Você é do signo de PHP"
+    assert horoscopo(9) == "Você é do signo de PHP"
 
-    assert horoscopo(10) == "TypeScript"
-    assert horoscopo(12) == "TypeScript"
+    assert horoscopo(10) == "Você é do signo de TypeScript"
+    assert horoscopo(12) == "Você é do signo de TypeScript"
 
-    assert horoscopo(-1) is None
-    assert horoscopo(0) is None
-    assert horoscopo(13) is None
-    
-    
-print (horoscopo(1))
+    assert horoscopo(-1) == "Valor inválido"
+    assert horoscopo(0) == "Valor inválido"
+    assert horoscopo(13) == "Valor inválido"
+
+
+print(horoscopo(1))
