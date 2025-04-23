@@ -14,16 +14,12 @@ def horoscopo(mes):  # função (def) com assinatura do método (horoscopo) e pa
 def test():
     assert horoscopo(1) == "Você é do signo de Python"
     assert horoscopo(3) == "Você é do signo de Python"
-
     assert horoscopo(4) == "Você é do signo de Java"
     assert horoscopo(6) == "Você é do signo de Java"
-
     assert horoscopo(7) == "Você é do signo de PHP"
     assert horoscopo(9) == "Você é do signo de PHP"
-
     assert horoscopo(10) == "Você é do signo de TypeScript"
     assert horoscopo(12) == "Você é do signo de TypeScript"
-
     assert horoscopo(-1) == "Valor inválido"
     assert horoscopo(0) == "Valor inválido"
     assert horoscopo(13) == "Valor inválido"
