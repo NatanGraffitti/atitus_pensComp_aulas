@@ -16,5 +16,4 @@ def test():
     assert saudacao("Matheus", "Jardim", 2050) is None
     print("Todos os testes passaram!")
 
-if __name__ == "__main__":
-    print(saudacao("Matheus", "Jardim", 2000)) 
+print(saudacao("Matheus", "Jardim", 2000)) 
