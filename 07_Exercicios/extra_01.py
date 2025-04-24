@@ -33,7 +33,7 @@ def test():
     assert letra_em_texto("Pensamento Computacional", "a")
     assert letra_em_texto("Pensamento Computacional", " ")
     assert letra_em_texto("Pensamento Computacional", "A")  
-    assert not letra_em_texto("Pensamento Computacional", "c")
+    assert letra_em_texto("Pensamento Computacional", "c")
 
     assert conta_letra_em_texto("Pensamento Computacional", "a") == 3
     assert conta_letra_em_texto("Pensamento Computacional", "A") == 0
