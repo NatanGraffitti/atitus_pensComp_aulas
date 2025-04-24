@@ -5,14 +5,14 @@ def letra_em_texto(texto, letra):
     return False
 
 def conta_letra_em_texto(texto, letra):
-     contador = 0
+    contador = 0  # Corrigido a indentação aqui
     for char in texto:
         if char == letra:
             contador += 1
     return contador
 
 def texto_sem_letra(texto, letra):
-   novo_texto = ""
+    novo_texto = ""  # Corrigido a indentação aqui
     for char in texto:
         if char != letra:
             novo_texto += char
@@ -41,12 +41,9 @@ def test():
     assert texto_sem_letra("Pensamento Computacional", "z") == "Pensamento Computacional"
     assert texto_sem_letra("Pensamento Computacional", " ") == "PensamentoComputacional"
 
-    assert (
-        texto_com_letra_upper("Pensamento Computacional", "a") == "PensAmento ComputAcionAl"
-    )
-    assert (
-        texto_com_letra_upper("Pensamento Computacional", "z") == "Pensamento Computacional"
-    )
-    assert (
-        texto_com_letra_upper("Pensamento Computacional", " ") == "Pensamento Computacional"
-    )
+    assert (texto_com_letra_upper("Pensamento Computacional", "a") == "PensAmento ComputAcionAl")
+    assert (texto_com_letra_upper("Pensamento Computacional", "z") == "Pensamento Computacional")
+    assert (texto_com_letra_upper("Pensamento Computacional", " ") == "Pensamento Computacional")
+
+print(texto_sem_letra("Pensamento Computacional", "a"))
+
