@@ -1,8 +1,12 @@
+#def eh_positivo(numero):
+#    if numero > 0:
+#        return True
+#    else:
+#        return False
+
+
 def eh_positivo(numero):
-    if numero >= 0:
-        return True
-    else:
-        return False
+    return numero > 0
 #   poderia ser usado também: def eh_positivo(valor):
 #                                  return valor > 0
 
