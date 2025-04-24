@@ -1,10 +1,10 @@
 def calcula_classe_social(salarios, salario_minimo):
+    if len(salarios) == 0:  # Verifica se a lista de salários está vazia
+        return None
+
     total_dinheiro = sum(salarios)
-
     total_pessoas = len(salarios)
-
     renda_por_pessoa = total_dinheiro / total_pessoas
-
     salarios_minimos_por_pessoa = renda_por_pessoa / salario_minimo
 
     if salarios_minimos_por_pessoa > 15:
@@ -17,6 +17,7 @@ def calcula_classe_social(salarios, salario_minimo):
         classe = "Classe D"
     else:
         classe = "Classe E"
+    
     return classe
 
 salarios_da_familia = [2000, 1500, 800, 500]
@@ -26,9 +27,8 @@ classe_da_familia = calcula_classe_social(salarios_da_familia, valor_salario_min
 print("A família é da", classe_da_familia)
 
 def test():
-    assert calcula_classe_social([], 1000) is None
+    assert calcula_classe_social([], 1000) is None  # Verifica lista vazia
     assert calcula_classe_social([1000], 1000) == "E"
-    assert calcula_classe_social([500], 1000) == "E"
     assert calcula_classe_social([500], 1000) == "E"
     assert calcula_classe_social([1000, 0], 900) == "E"
     assert calcula_classe_social([1000], 900) == "D"
