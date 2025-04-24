@@ -1,21 +1,19 @@
 def calcula_classe_social(salarios, salario_minimo):
-    if not salarios:  
+    if not salarios:
         return None
     
-    total_rendimento = sum(salarios)  
+    total_rendimento = sum(salarios)
     
-   
     if total_rendimento <= salario_minimo:
         return "E"
-    if total_rendimento <= 3 * salario_minimo:
+    elif total_rendimento <= 3 * salario_minimo:
         return "D"
-    if total_rendimento <= 10 * salario_minimo:
+    elif total_rendimento <= 10 * salario_minimo:
         return "C"
-    if total_rendimento <= 20 * salario_minimo:
+    elif total_rendimento <= 20 * salario_minimo:
         return "B"
     else:
         return "A"
-    
 
 def test():
     assert calcula_classe_social([], 1000) is None
