@@ -1,4 +1,6 @@
 def letra_em_texto(texto, letra):
+    texto = texto.lower()  
+    letra = letra.lower()  
     for char in texto:
         if char == letra:
             return True
@@ -30,7 +32,7 @@ def texto_com_letra_upper(texto, letra):
 def test():
     assert letra_em_texto("Pensamento Computacional", "a")
     assert letra_em_texto("Pensamento Computacional", " ")
-    assert not letra_em_texto("Pensamento Computacional", "A")
+    assert not letra_em_texto("Pensamento Computacional", "A")  
     assert not letra_em_texto("Pensamento Computacional", "c")
 
     assert conta_letra_em_texto("Pensamento Computacional", "a") == 3
