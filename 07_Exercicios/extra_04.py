@@ -1,4 +1,4 @@
-def calcular_classe_social(salarios, salario_minimo):
+def calcula_classe_social(salarios, salario_minimo):
     total_dinheiro = sum(salarios)
 
     total_pessoas = len(salarios)
@@ -22,7 +22,7 @@ def calcular_classe_social(salarios, salario_minimo):
 salarios_da_familia = [2000, 1500, 800, 500]
 valor_salario_minimo = 1412.00  
 
-classe_da_familia = calcular_classe_social(salarios_da_familia, valor_salario_minimo)
+classe_da_familia = calcula_classe_social(salarios_da_familia, valor_salario_minimo)
 print("A família é da", classe_da_familia)
 
 def test():
