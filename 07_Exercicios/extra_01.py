@@ -5,14 +5,14 @@ def letra_em_texto(texto, letra):
     return False
 
 def conta_letra_em_texto(texto, letra):
-    contador = 0  # Corrigido a indentação aqui
+    contador = 0  
     for char in texto:
         if char == letra:
             contador += 1
     return contador
 
 def texto_sem_letra(texto, letra):
-    novo_texto = ""  # Corrigido a indentação aqui
+    novo_texto = ""  
     for char in texto:
         if char != letra:
             novo_texto += char
