@@ -25,20 +25,28 @@ def obtem_dados_endereco(cep):
 
 
 def validador_cep(cep):
-    pass
+    if len(cep) == 9:
+        cep = cep.replace('-', '')
+    if len(cep) != 8:
+        return False
+    try:
+        int(cep)
+        return true
+    except:
+        return False
 
 
 def add_endereco(cache, endereco):
     pass
 
-
-assert validador_cep("99110000")
-assert validador_cep("99110-000")
-assert not validador_cep("99110 000")
-assert not validador_cep("9911-0000")
-assert not validador_cep("99110000 ")
-assert not validador_cep(" 99110000")
-assert not validador_cep("9911000")
+def test():
+    assert validador_cep("99110000")
+    assert validador_cep("99110-000")
+    assert not validador_cep("99110 000")
+    assert not validador_cep("9911-0000")
+    assert not validador_cep("99110000 ")
+    assert not validador_cep(" 99110000")
+    assert not validador_cep("9911000")
 
 endereco_01 = {
     "cep": "91110-000",
@@ -52,8 +60,9 @@ endereco_02 = {
     "localidade": "Porto Alegre",
 }
 resposta_01 = {"RS": {"Porto Alegre": ["91110-000"]}}
-assert add_endereco({}, endereco_01) == resposta_01
-assert add_endereco(resposta_01, endereco_01) == resposta_01
-assert add_endereco(resposta_01, endereco_02) == {
+def test():
+    assert add_endereco({}, endereco_01) == resposta_01
+    assert add_endereco(resposta_01, endereco_01) == resposta_01
+    assert add_endereco(resposta_01, endereco_02) == {
     "RS": {"Porto Alegre": ["91110-000", "90240-111"]}
 }
