@@ -1,6 +1,12 @@
-def soma_pares(numeros: list, alvo: int) -> bool:
-    pass
-
+def soma_pares(numeros: list, alvo: int) -> bool: 
+        for lista in numeros:
+        x = lista
+        for i in numeros:
+            if i + x == alvo:
+                return True
+            else:
+                pass
+    return False
 
 assert soma_pares([1, 2], 4)
 assert not soma_pares([8], 1)
