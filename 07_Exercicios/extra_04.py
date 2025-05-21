@@ -14,7 +14,7 @@ def calcula_classe_social(salarios, salario_minimo):
         return "B"
     else:
         return "A"
-
+        
 def test():
     assert calcula_classe_social([], 1000) is None
     assert calcula_classe_social([1000], 1000) == "E"
