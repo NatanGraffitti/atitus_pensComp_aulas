@@ -25,4 +25,4 @@ def test():
     assert calcula_classe_social([20000, 25000], 1000) == "A"
     assert calcula_classe_social([20000, 0, 0, 0, 0], 1000) == "C"
 
-print(calcula_classe_social([1000], 900))
+print(calcula_classe_social([1000], 15000))
