@@ -1,4 +1,4 @@
-def multiply_matrix_by_scalar(matrix, scalar):
+def multiplica_matrix_scalar(matrix, scalar):
     resultado = []
     for linha in matrix:
         resultado_linha = []
@@ -6,6 +6,11 @@ def multiply_matrix_by_scalar(matrix, scalar):
             resultado_linha.append(elemento * scalar)
         resultado.append(resultado_linha)
     return resultado
+    
+matrix = [[1, 2], [3, 4]]
+scalar = 2
+result = multiplica_matrix_scalar(matrix, scalar)
+print(result)
 
 
 def test():
