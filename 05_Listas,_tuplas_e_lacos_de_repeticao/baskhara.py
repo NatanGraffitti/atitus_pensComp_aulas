@@ -20,5 +20,5 @@ def test():
     assert baskhara(1, 2, 3) is None
     assert baskhara(1, 0, 0) == [0.0]
 
-test()
+
 print(baskhara(1, -3, 2))
