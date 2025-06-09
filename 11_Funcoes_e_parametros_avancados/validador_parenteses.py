@@ -13,16 +13,16 @@ def validador_parenteses(entrada: str) -> bool:
     else:
         return False
 
-# Valores válidos
-assert validador_parenteses("()")
-assert validador_parenteses("()()")
-assert validador_parenteses("(())")
-assert validador_parenteses("(()()())")
-assert validador_parenteses("(((())()))")
+def test_validos():
+    assert validador_parenteses("()")
+    assert validador_parenteses("()()")
+    assert validador_parenteses("(())")
+    assert validador_parenteses("(()()())")
+    assert validador_parenteses("(((())()))")
 
-# Valores inválidos
-assert validador_parenteses(")")
-assert validador_parenteses("(")
-assert validador_parenteses("()(")
-assert validador_parenteses("()()())")
-assert validador_parenteses("(((())())")
+def test_invalidos():
+    assert not validador_parenteses(")")
+    assert not validador_parenteses("(")
+    assert not validador_parenteses("()(")
+    assert not validador_parenteses("()()())")
+    assert not validador_parenteses("(((())())")
