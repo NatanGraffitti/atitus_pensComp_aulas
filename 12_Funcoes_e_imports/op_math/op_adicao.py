@@ -9,7 +9,8 @@ def adicao(valor1: int, valor2: int) -> int:
         for _ in range(-valor2):
             valor1 -= 1
         return valor1
-
-assert adicao(1, 2) == 3
-assert adicao(1, 0) == 1
-assert adicao(-1, -2) == -3
+        
+def test():
+    assert adicao(1, 2) == 3
+    assert adicao(1, 0) == 1
+    assert adicao(-1, -2) == -3
