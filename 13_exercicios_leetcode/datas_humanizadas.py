@@ -1,9 +1,20 @@
 MINUTO = 60
 HORA = 60 * MINUTO
 
-
 def data_humanizada(duracao: int) -> str:
-    pass
+    horas = duracao // HORA
+    resto = duracao % HORA
+    minutos = resto // MINUTO
+    segundos = resto % MINUTO
+
+    partes = []
+    if horas > 0:
+        partes.append(f"{horas} hora" + ("s" if horas > 1 else ""))
+    if minutos > 0:
+        partes.append(f"{minutos} minuto" + ("s" if minutos > 1 else ""))
+    if segundos > 0 or (horas == 0 and minutos == 0):
+        partes.append(f"{segundos} segundo" + ("s" if segundos != 1 else ""))
+    return " ".join(partes)
 
 
 assert data_humanizada(10) == "10 segundos"
