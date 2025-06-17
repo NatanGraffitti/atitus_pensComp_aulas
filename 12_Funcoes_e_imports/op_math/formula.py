@@ -1,5 +1,6 @@
 def formula(a, b):
-    # Sem usar os operadores matemácios (+, -, /, *)
-    # return ((a + b) * (a - b)) / 2
-    # return divisao(multiplicacao(adicao(a, b), subtracao(a, b)), 2)
-    pass
+    soma = adicao(a, b)          # a + b sem usar '+'
+    diferenca = subtracao(a, b)  # a - b sem usar '-'
+    produto = multiplicacao(soma, diferenca)  # (a + b) * (a - b) sem '*'
+    resultado = divisao(produto, 2)            # divide por 2 sem '/'
+    return resultado
