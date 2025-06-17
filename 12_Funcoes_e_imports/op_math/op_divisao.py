@@ -12,7 +12,8 @@ def divisao(a: int, b: int) -> int | None:
         quociente += 1  
     return -quociente if negativo else quociente
 
-assert divisao(-10, 2) == -5
-assert divisao(10, -2) == -5
-assert divisao(10, 2) == 5
-assert divisao(10, 0) is None
+def test():    
+    assert divisao(-10, 2) == -5
+    assert divisao(10, -2) == -5
+    assert divisao(10, 2) == 5
+    assert divisao(10, 0) is None
