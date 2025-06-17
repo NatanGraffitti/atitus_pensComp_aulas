@@ -17,11 +17,11 @@ print(f"Montante total após {tempo} anos: R$ {montante total}")
 montante_total = calcular_juros_compostos_recursivo(principal, taxa, tempo)
 print(f"Montante total após {tempo} anos: R$ {montante total}")
 
-
-assert calcular_juros_compostos(1000, 0.05, 5) == 1276.2815625000003
-assert calcular_juros_compostos(1000, 0.05, 10) == 1628.894626777442
-assert calcular_juros_compostos(1000, 0.05, 0) == 1000
-
-assert calcular_juros_compostos_recursivo(1000, 0.05, 5) == 1276.2815625000003
-assert calcular_juros_compostos_recursivo(1000, 0.05, 10) == 1628.894626777442
-assert calcular_juros_compostos_recursivo(1000, 0.05, 0) == 1000
+def test():
+    assert calcular_juros_compostos(1000, 0.05, 5) == 1276.2815625000003
+    assert calcular_juros_compostos(1000, 0.05, 10) == 1628.894626777442
+    assert calcular_juros_compostos(1000, 0.05, 0) == 1000
+    
+    assert calcular_juros_compostos_recursivo(1000, 0.05, 5) == 1276.2815625000003
+    assert calcular_juros_compostos_recursivo(1000, 0.05, 10) == 1628.894626777442
+    assert calcular_juros_compostos_recursivo(1000, 0.05, 0) == 1000
