@@ -1,6 +1,8 @@
 def sao_anagramas(palavra1: str, palavra2: str) -> bool:
-    pass
+    if len(palavra1) != len(palavra2):
+        return False
 
+    return sorted(palavra1) == sorted(palavra2)
 
 assert sao_anagramas("amor", "roma")
 assert sao_anagramas("iracema", "america")
