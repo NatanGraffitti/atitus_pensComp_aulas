@@ -1,7 +1,8 @@
-def subtracao(valor1: int, valor2: int) -> int:
-    # subtracao(a, b): não pode usar o símbolo ‘-’
-    pass
+def negativo(x: int) -> int:
+    return ~x + 1
 
+def subtracao(valor1: int, valor2: int) -> int:
+    return valor1 + negativo(valor2)
 
 assert subtracao(-10, 2) == -12
 assert subtracao(10, -2) == 12
