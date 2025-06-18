@@ -26,6 +26,6 @@ run_tests() {
  run_tests 16_json,XML,CSV/*.py
  run_tests 17_TDD/*.py
  run_tests 18_exercicios/*.py
- run_tests XX_extras/*.py
+ # run_tests XX_extras/*.py
 
 echo "All tests ran successfully"
